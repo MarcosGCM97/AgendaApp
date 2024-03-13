@@ -1,13 +1,108 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(59, 245, 137);
+}
+.messageAdd{
+    display: inline;
+    color: rgb(6, 39, 6);
+    border: 5px solid rgb(6, 54, 6);
+    background-color: rgba(73, 224, 73, 0.788);
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+}
+.messageError{
+    display: inline;
+    color: rgb(39, 6, 6);
+    border: 5px solid rgb(54, 6, 6);
+    background-color: rgba(224, 73, 73, 0.788);
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+    margin: 0 0 20px 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgb(48, 119, 78);
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+h2{
+    color: white;
+    background-color: rgba(119, 141, 119, 0.486);
+    width: 50%;
+}
+.divFilter{
+    background-color: rgb(19, 70, 40);
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.personForm{
+    background-color: rgb(19, 70, 40);
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.divInput{
+    background-color: rgb(19, 70, 40);
+    position: relative;
+}
+.divInput input{
+}
+.btnAdd{
+    border: none;
+    padding: 8px;
+    background-color: rgb(103, 235, 158);
+    color: rgb(10, 59, 10);
+    font-weight: 800;
+    cursor: pointer;
+}
+input{
+    border: none;
+    padding: 8px;
+}
+.ulPersons{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    background-color: rgb(19, 70, 40);
+    padding: 5px;
+    
+}
+.liPersons{
+    position: relative;
+    text-align: left;
+    background-color: rgb(19, 70, 40);
+}
+.liPersons button{
+    position: absolute;
+    right: 0;
+    border: none;
+    padding: 1.5px;
+    cursor: pointer;
+    color: rgb(119, 3, 3);
+    font-weight: 600;
+    background-color: rgb(49, 153, 92);
 }
